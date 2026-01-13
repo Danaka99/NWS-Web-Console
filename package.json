@@ -1,0 +1,18 @@
+{
+  "name": "nugenesis-web-services",
+  "version": "1.0.0",
+  "description": "NuGenesis Web Services - OpenStack Management Console",
+  "scripts": {
+    "install-all": "cd server && npm install && cd ../client && npm install",
+    "server": "cd server && npm start",
+    "client": "cd client && npm start",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "build": "cd client && npm run build"
+  },
+  "keywords": ["openstack", "cloud", "management", "console"],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
